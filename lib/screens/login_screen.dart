@@ -42,7 +42,7 @@ class LoginScreen extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const Text("Don't have an account ? "),
+                        const Text('Don\'t have an account ? '),
                         const MySizedBox(height: 0, width: 5),
                         InkWell(
                           onTap: () {
