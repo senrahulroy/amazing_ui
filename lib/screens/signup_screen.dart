@@ -35,11 +35,13 @@ class SingupScreen extends StatelessWidget {
                   makeInput(lable: 'Password', obsecure: true),
                   const MySizedBox(height: 20, width: 0),
                   LargeButton(
-                      text: 'Login', color: Colors.blue, onPressed: () {}),
+                      text: 'Sign Up',
+                      color: Colors.redAccent,
+                      onPressed: () {}),
                   const MySizedBox(height: 20, width: 0),
                   GestureDetector(
                     onTap: () {
-                      Navigator.pushNamed(context, RoutsName.login);
+                      Navigator.pushReplacementNamed(context, RoutsName.login);
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -48,7 +50,8 @@ class SingupScreen extends StatelessWidget {
                         const MySizedBox(height: 0, width: 5),
                         InkWell(
                           onTap: () {
-                            Navigator.pushNamed(context, RoutsName.login
+                            Navigator.pushReplacementNamed(
+                                context, RoutsName.login
                                 // MaterialPageRoute(
                                 //   builder: (context) => const LoginScreen(),
                                 // )

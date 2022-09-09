@@ -46,11 +46,19 @@ class LoginScreen extends StatelessWidget {
                         const MySizedBox(height: 0, width: 5),
                         InkWell(
                           onTap: () {
-                            Navigator.pushNamed(context, RoutsName.signup
-                                // MaterialPageRoute(
-                                //   builder: (context) => const SingupScreen(),
-                                // )
-                                );
+                            Navigator.pushReplacementNamed(
+                                context, RoutsName.signup);
+                            //     MaterialPageRoute(
+                            //       builder: (context) => const SingupScreen(),
+                            //     )
+                            // Navigator.pushReplacement(
+                            //     context,
+                            //     MaterialPageRoute(
+                            //         builder: (BuildContext context) =>
+                            //             NewPage()));
+
+                            //     );
+                            // Navigator.push
                           },
                           child: const Text(
                             "Sign Up",
